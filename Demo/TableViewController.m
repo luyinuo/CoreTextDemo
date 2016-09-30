@@ -89,7 +89,7 @@ NSString * const AttributedTextCellReuseIdentifier = @"AttributedTextCellReuseId
     
     TableViewCell *cell = (TableViewCell *)[self tableView:tableView preparedCellForIndexPath:indexPath];
     
-    return 150;
+    return 200;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
