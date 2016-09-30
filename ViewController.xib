@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-VF-87s">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdJ-o3-7ll">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="73" id="nX1-sQ-Qwq"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="nX1-sQ-Qwq"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="73"/>
+                        <mask key="constraints">
+                            <include reference="nX1-sQ-Qwq"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TdJ-o3-7ll" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="7Md-fw-NOv"/>
+                <constraint firstItem="zRI-VF-87s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BuB-l1-lA4"/>
+                <constraint firstAttribute="bottom" secondItem="zRI-VF-87s" secondAttribute="bottom" id="VDp-iz-hhY"/>
+                <constraint firstAttribute="trailing" secondItem="TdJ-o3-7ll" secondAttribute="trailing" id="cDv-NA-bZK"/>
+                <constraint firstItem="TdJ-o3-7ll" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ca7-Uj-iRF"/>
+                <constraint firstItem="TdJ-o3-7ll" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eC0-he-Juc">
+                    <variation key="widthClass=compact" constant="64"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="zRI-VF-87s" secondAttribute="trailing" id="hvj-4O-cmT"/>
+                <constraint firstItem="zRI-VF-87s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vnL-GZ-ebA"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="zRI-VF-87s"/>
+                    <exclude reference="TdJ-o3-7ll"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="7Md-fw-NOv"/>
+                    <exclude reference="cDv-NA-bZK"/>
+                    <exclude reference="ca7-Uj-iRF"/>
+                    <exclude reference="eC0-he-Juc"/>
+                    <exclude reference="BuB-l1-lA4"/>
+                    <exclude reference="VDp-iz-hhY"/>
+                    <exclude reference="hvj-4O-cmT"/>
+                    <exclude reference="vnL-GZ-ebA"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="zRI-VF-87s"/>
+                    <include reference="TdJ-o3-7ll"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="7Md-fw-NOv"/>
+                    <include reference="cDv-NA-bZK"/>
+                    <include reference="ca7-Uj-iRF"/>
+                    <exclude reference="eC0-he-Juc"/>
+                    <include reference="BuB-l1-lA4"/>
+                    <include reference="VDp-iz-hhY"/>
+                    <include reference="hvj-4O-cmT"/>
+                    <include reference="vnL-GZ-ebA"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="295" y="388"/>
+        </view>
+    </objects>
+</document>
